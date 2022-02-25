@@ -10,4 +10,15 @@
 // * Use an if..else block to determine which message to display
 // * Use the println macro to display messages to the terminal
 
-fn main() {}
+fn main() {
+  // * Displays a message based on the value of a boolean variable
+  let boolean = false;
+
+  // * When the variable is set to true, display "hello"
+  if boolean == true {
+    println!("hello");
+  } else {
+    // * When the variable is set to false, display "goodbye"
+    println!("goodbye");  
+  }
+}
