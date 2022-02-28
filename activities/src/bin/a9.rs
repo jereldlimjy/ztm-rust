@@ -9,4 +9,21 @@
 // * Destructure the return value into two variables
 // * Use an if..else if..else block to determine what to print
 
-fn main() {}
+// * Use a function that returns a tuple
+fn get_coord() -> (i32, i32) {
+  (3, 5)
+}
+
+fn main() {
+  // * Destructure the return value into two variables
+  let (x, y) = get_coord();
+
+  // * Use an if..else if..else block to determine what to print
+  if y > 5 {
+    println!("> 5");
+  } else if y < 5 {
+    println!("< 5");
+  } else {
+    println!("= 5");
+  }
+}
